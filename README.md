@@ -113,6 +113,7 @@ INSERT INTO Interactions (InteractionID, TicketID, InteractionText, InteractionT
 
 ### Creating another user and grant Select and Insert privileges
 ```sql
+CREATE USER anotherUser IDENTIFIED BY user;
 -- Granting SELECT and INSERT permissions to anotherUser
 GRANT SELECT, INSERT ON Customers TO anotherUser WITH GRANT OPTION;
 GRANT SELECT, INSERT ON SupportTickets TO anotherUser WITH GRANT OPTION;
